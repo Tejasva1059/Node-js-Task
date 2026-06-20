@@ -1,4 +1,4 @@
-# JWT Refresh Token Demo (TypeScript + Express + MongoDB)
+# TASK (TypeScript + Express + MongoDB)
 
 Features:
 - POST /register — create user (email + password)
@@ -6,8 +6,7 @@ Features:
 - POST /refresh-token — exchange refresh token for new tokens (rotating refresh tokens)
 
 Quick start:
-1. Copy `.env.example` to `.env` and set `MONGO_URI` and secrets.
-2. Install dependencies:
+1. Install dependencies:
 
 ```bash
 npm install
@@ -27,6 +26,13 @@ Endpoints:
 Notes:
 - Access tokens expire in 1 minute.
 - Refresh tokens expire in 7 days and are stored per-user in DB.
+
+  NPM scripts
+
+- `npm run start` — dev server (ts-node-dev)
+- `npm run build` — TypeScript build
+- `npm run start:prod` — run compiled build
+- `npm run test:auth` — run auth test script
 
 Examples (curl)
 
